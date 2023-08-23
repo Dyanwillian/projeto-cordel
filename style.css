@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&family=Passion+One:wght@700&family=Roboto:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora&family=Passion+One:wght@700&family=Roboto:wght@300&family=Sriracha&display=swap');
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1{
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 10vw;
+}
+
+header > p{
+    padding-bottom: 50px;   
+    font-family: var(--font1);
+}
+header a, footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+ }
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3.3vw;
+}
+section > p{
+    padding-bottom: 2em;
+}
+section#img01{
+    background-image: url(imagens/imagens/background001.jpg);
+    text-shadow: 1px 1px 0px black;
+    background-position: right center;
+   
+}
+section#img02{
+    background-image: url(imagens/imagens/background002.jpg);
+    text-shadow: 1px 1px 0px black;
+    background-position: right center;
+  
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+.imagem{
+    background-color: #00000089;
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.537);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.imagem > p{
+    display: inline-block;
+    background-color: #00000064;
+    padding: 5px;
+}
+footer{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+footer a{
+    font-weight: bold;
+    font-size: 1.2em;
+    font-family: var(--font1);
+}
